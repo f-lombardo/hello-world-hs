@@ -1,0 +1,22 @@
+name: hello-world
+version: 1.1.0.4
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: 
+    - HelloWorld 
+    - HelloName
+  source-dirs: src
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - hello-world
+      - hspec
